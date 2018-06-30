@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CongoMaineDatabaseModelStoreContainer" CdmEntityContainer="CongoDataEntities">
+    <EntitySetMapping Name="Table_Coco_People">
+      <EntityTypeMapping TypeName="CongoMaineDatabaseModel.Table_Coco_People">
+        <MappingFragment StoreEntitySet="Table_Coco_People">
+          <ScalarProperty Name="id_member" ColumnName="id_member" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="middle_name" ColumnName="middle_name" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="code_postal" ColumnName="code_postal" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="addresse" ColumnName="addresse" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs" style="position:center">
+        <div>
+            <h5 style="color:yellowgreen; text-justify:kashida">President</h5>
+        </div>
+        <img src="~/Images/cocom1.jpg" style="margin-left: 10px" class="img-rounded" width="350" height="300" />
+        <img src="~/Images/maine2.png" style="margin-top: 10px" class="img-rounded" width="350" height="300" />
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="row" style="color:whitesmoke; text-justify:kashida">
+            <h3 style="color:lightslategray; text-justify:kashida; margin-bottom:10px"><b>Registration Page</b></h3>
+        </div>
+        <div class="row" style="margin:10px">
+            <div class="row"></div>
+            <div class="row" style="position:center">
+                <div class="form-style-2 col-xs-12 col-lg-12 col-md-12 col-sm-12" style="background-color:skyblue">
+                    <div class="form-style-2-heading" style="color:white"><b>Entrez vos informmations</b></div>
+                    <form action="gotoServer" method="post">
+                        <label for="field1" style="color:whitesmoke; text-justify:kashida"><span>Prenom<span class="required">*</span></span><input type="text" class="input-field" name="field1" maxlength="15" value="" /></label>
+                        <label for="field2" style="color:whitesmoke; text-justify:kashida"><span>Nom<span class="required">*</span></span><input type="text" class="input-field" name="field2" maxlength="15"  value="" /></label>
+                        <label for="field3" style="color:whitesmoke; text-justify:kashida"><span>Postnom<span class="required">*</span></span><input type="text" class="input-field" maxlength="15" name="field3" value="" /></label>
+                        <label for="field4" style="color:whitesmoke; text-justify:kashida"><span>Address <span class="required">*</span></span><input type="text" class="input-field" maxlength="30" name="field4" value="" /></label>
+                        <label for="field5" style="color:whitesmoke; text-justify:kashida"><span>City <span class="required">*</span></span><input type="text" class="input-field" maxlength="15" name="field5" value="" /></label>
+                        <label for="field6" style="color:whitesmoke; text-justify:kashida"><span>Zip code <span class="required">*</span></span><input type="text" class="input-field" name="field6" maxlength="5" value="" /></label>
+                        <label for="field7" style="color:whitesmoke; text-justify:kashida"><span>Telephone <span class="required">*</span></span><input type="text" class="input-field" name="field7" maxlength="10" value="" /></label>                    
+                        <label><span>&nbsp;</span><input type="submit" value="Submit" /></label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+        <div>
+            <h5 style="color:yellowgreen; text-justify:kashida">Actuel comite</h5>
+            <img src="~/Images/allofus.jpg" style="color:yellowgreen; text-justify:kashida; margin-left:10px" class="img-rounded" width="400" height="300" />
+            <img src="~/Images/Congo.gif" style="margin-top: 10px" class="img-rounded" width="350" height="300" />
+        </div>
+    </div>
+</div>
+

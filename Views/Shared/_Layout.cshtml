@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congolese Community Of Maine</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .form-style-2 {
+            max-width: 500px;
+            padding: 20px 12px 10px 20px;
+            font: 13px Arial, Helvetica, sans-serif;
+        }
+
+        .form-style-2-heading {
+            font-weight: bold;
+            font-style: italic;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 20px;
+            font-size: 15px;
+            padding-bottom: 3px;
+        }
+
+        .form-style-2 label {
+            display: block;
+            margin: 0px 0px 15px 0px;
+        }
+
+            .form-style-2 label > span {
+                width: 100px;
+                font-weight: bold;
+                float: left;
+                padding-top: 8px;
+                padding-right: 5px;
+            }
+
+        .form-style-2 span.required {
+            color: red;
+        }
+
+        .form-style-2 .tel-number-field {
+            width: 40px;
+            text-align: center;
+        }
+
+        .form-style-2 input.input-field, .form-style-2 .select-field {
+            width: 48%;
+        }
+
+        .form-style-2 input.input-field,
+        .form-style-2 .tel-number-field,
+        .form-style-2 .textarea-field,
+        .form-style-2 .select-field {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            border: 1px solid #C2C2C2;
+            box-shadow: 1px 1px 4px #EBEBEB;
+            -moz-box-shadow: 1px 1px 4px #EBEBEB;
+            -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            padding: 7px;
+            outline: none;
+        }
+
+            .form-style-2 .input-field:focus,
+            .form-style-2 .tel-number-field:focus,
+            .form-style-2 .textarea-field:focus,
+            .form-style-2 .select-field:focus {
+                border: 1px solid yellow;
+            }
+
+        .form-style-2 .textarea-field {
+            height: 100px;
+            width: 55%;
+        }
+
+        .form-style-2 input[type=submit],
+        .form-style-2 input[type=button] {
+            border: none;
+            padding: 8px 15px 8px 15px;
+            background: #FF8500;
+            color: #fff;
+            box-shadow: 1px 1px 4px #DADADA;
+            -moz-box-shadow: 1px 1px 4px #DADADA;
+            -webkit-box-shadow: 1px 1px 4px #DADADA;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+        }
+
+            .form-style-2 input[type=submit]:hover,
+            .form-style-2 input[type=button]:hover {
+                background: #EA7B00;
+                color: #fff;
+            }
+    </style>
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body style="background-color:aliceblue">
+    <div>
+        list of images, Animations, motto, icon, flags, fields of activity
+    </div>
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:darkblue" id="photo">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="~/Images/congoflag.jpg" width="50" height="50" />
+                @Html.ActionLink("Congolese Community Of Maine", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Registration page", "Index", "Ndaku")</li>
+                    <li>@Html.ActionLink("Info page", "Info", "Ndaku")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content" style="padding:inherit">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <p>&copy; @DateTime.Now.Year - Congolese Community Of Maine</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div><p>email: cocomaine@cocomaine.com</p></div>
+                <div>
+                    <table>
+                        <tr><td>Telephones : </td><td>5059606</td></tr>
+                        <tr><td></td><td>82484948</td></tr>
+                        <tr><td></td><td>449490490</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <table class="pull-right">
+                    <tr><td>The designer</td><td></td></tr>
+                    <tr><td></td><td><img src="~/Images/designer.jpg" width="100" height="100" class="img-circle" /></td></tr>
+                </table>
+                
+            </div>
+           
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
